@@ -1,0 +1,14 @@
+swarm-mgr ansible_host=192.168.43.101
+swarm-host1 ansible_host=192.168.43.102
+swarm-host2 ansible_host=192.168.43.103
+
+[manager]
+swarm-mgr
+
+[node]
+swarm-host1
+swarm-host2
+
+[all:vars]
+ansible_ssh_user=vagrant
+ansible_ssh_pass=vagrant
